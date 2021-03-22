@@ -1,6 +1,6 @@
 console.log('app.js');
 
-// Create
+/*// Create
 var todos = ['운동']
 var todo = '게임';
 todos.push(todo);
@@ -36,7 +36,7 @@ var deleteTodo = '공부';
 var newTodos = todos.filter(function (todo) {
     return todo !== deleteTodo;
 });
-console.log(newTodos);
+console.log(newTodos);*/
 
 /*var isMan = false;
 if (isMan) {
@@ -48,4 +48,36 @@ else {
     console.log('2');
 }*/
 
+// window.alert('1');
+// var who = prompt('당신은 누구세요?');
+// console.log(who);
+
+// var isDelete = confirm('정말 삭제하시겠습니까?');
+// console.log(isDelete);
+
+/*function sum(a, b) {
+    return a + b;
+}
+
+console.log(sum(1,2));*/
+
+/*var car = {
+    year: '2014',
+    starting: function () {
+        console.log('starting..');
+    },
+};
+car.starting();*/
+
+// (function () {
+//     var a = 'a';
+//     console.log(a);
+// })();
+
+/*function sum(x, y) {
+    if (!y) y = 1;
+    console.log(x + y);
+}
+console.log(sum(3));
+console.log(sum(3,1));*/
 
