@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    #board {
+        width: 400px;
+        height: 400px;
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .white {
+        background-color: white;
+        width: 100px;
+        height: 100px;
+    }
+
+    .black {
+        background-color: black;
+        width: 100px;
+        height: 100px;
+    }
+
+    .clicked {
+        background-color: red;
+    }
+</style>
+<body>
+<div id="board"></div>
+<script>
+    var idx = 0;
+    var board = document.getElementById('board');
+
+    for (var i = 0; i < 4; i++) {
+        for (var j = 0; j < 4; j++) {
+            var point = document.createElement('span');
+            var color;
+
+            if ((j + i * (4 + 1)) % 2 === 0) {
+                color = 'black';
+            } else {
+                color = 'white';
+            }
+
+            point.setAttribute('id', 'point' + (j + i * 4));
+            point.classList.add(color);
+            board.appendChild(point);
+        }
+    }
+
+    board.addEventListener('click', function (event) {
+        var id = event.target.getAttribute('id');
+        if (id.startsWith('point')) {
+            var index = parseInt(id.substring('point'.length), 10);
+            board.children[idx].classList.remove('clicked');
+            event.target.classList.add('clicked');
+            idx = index;
+        }
+    });
+</script>
+</body>
+</html>
