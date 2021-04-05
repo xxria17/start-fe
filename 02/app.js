@@ -1,83 +1,85 @@
 console.log('app.js');
 
-/*// Create
-var todos = ['운동']
-var todo = '게임';
-todos.push(todo);
-console.log(todos);
+/*
+var name = '이도현';
+var Name = '이도현';
 
-// Read
-todos.forEach(function (todo) {
-    console.log(todo);
-});
+console.log(name);
+console.log(Name);
+*/
 
-// Update
-var todos = ['운동','게임'];
-var updateTodo = '게임';
-var updateIndex = todos.findIndex(function (todo) {
-    return todo === updateTodo;
-});
-console.log(updateTodo);
+// console.log(1);
+// console.log(2);
 
-var newTodos = todos.map(function (todo) {
-    if (todo === updateTodo) {
-        return '공부';
-    }
-    return todo;
-});
-console.log(newTodos);
+/* var count = 1;
+console.log(count);
+*/
 
-var words = ['a', 'b', 'c'];
-console.log(words.splice(0,1));
-console.log(words);
+/*
+var isMan = true; // boolean
+var isMan = "true"; //String
 
-var todos = ['운동', '공부'];
-var deleteTodo = '공부';
-var newTodos = todos.filter(function (todo) {
-    return todo !== deleteTodo;
-});
-console.log(newTodos);*/
+console.log(isMan);
+*/
 
-/*var isMan = false;
-if (isMan) {
-    console.log('1');
-} else if (isMan && isHero) {
-
-}
-else {
-    console.log('2');
-}*/
-
-// window.alert('1');
-// var who = prompt('당신은 누구세요?');
-// console.log(who);
-
-// var isDelete = confirm('정말 삭제하시겠습니까?');
-// console.log(isDelete);
-
-/*function sum(a, b) {
-    return a + b;
+/*function log(str) {
+    console.log(str);
 }
 
-console.log(sum(1,2));*/
+var log = function(str) {
+    console.log(str);
+}
 
-/*var car = {
-    year: '2014',
-    starting: function () {
-        console.log('starting..');
-    },
+log('hello');
+*/
+
+// 3차시
+
+/*
+var image = {
+    width : 100,
+    heigth : 100,
+    name: '1.png',
 };
-car.starting();*/
 
-// (function () {
-//     var a = 'a';
-//     console.log(a);
-// })();
+var image1 = [1, 2, 3, 4, 5, 6, 'a', {}];
+image1[0] = 'a';
 
-/*function sum(x, y) {
-    if (!y) y = 1;
-    console.log(x + y);
+
+// var imageWidth = 100;
+// var imageHeigth = 100;
+// var imageName = '1.png';
+console.log(image, image1);
+*/
+
+/*
+var data = null; //null
+var data1 = ''; //''
+var data2;  //undefined
+
+console.log(data, data1, data2);
+*/
+
+/*
+console.log(1 + 2);
+console.log('a' + 'b');
+console.log(1 + '4');
+
+var count = 1;
+var number = '2';
+console.log(count, number);
+
+console.log('' == '0');
+console.log(0 === '', 0 == '');
+
+var isHero = true;
+if (!isHero) {
+    console.log('hero');
 }
-console.log(sum(3));
-console.log(sum(3,1));*/
 
+console.log(typeof 1);
+console.log(typeof []);
+console.log(typeof '1');
+console.log(typeof {});
+
+*/
