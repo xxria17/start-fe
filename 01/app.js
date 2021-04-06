@@ -1,1 +1,1 @@
-console.log('app.js');
+console.log('quiz1.js');

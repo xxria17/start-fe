@@ -1,4 +1,4 @@
-console.log('app.js');
+console.log('quiz1.js');
 
 /*
 var name = '이도현';
