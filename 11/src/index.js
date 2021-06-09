@@ -1,14 +1,12 @@
 //start...
 import css from './todos.css';
 import { render } from './html-render';
+import { loadData } from './data-manager'
 import formInput from './form-input';
 
 const $result = document.querySelector('#result');
 
-const todos = [{
-    test: 'aaa',
-    isDone: false,
-}];
+const todos = loadData();
 
 $result.addEventListener('click', (event) => {
     const {className} = (event.target);
