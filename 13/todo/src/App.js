@@ -1,10 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { userState } from 'react';
+import Header from './Header';
 
 function App() {
+  const [countNumber, setCountNumber] = userState(0);
+
+  function addCountNumber() {
+    setCountNumber(countNumber + 1);
+  }
+  
   return (
     <div className="App">
-      <div className="App">Hello123123</div>
+      <Header />
+      <div>{countNumber}</div>
+      <button onClicl={addCountNumber}>플러스</button>
     </div>
   );
 }
